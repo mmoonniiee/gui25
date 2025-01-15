@@ -1,0 +1,53 @@
+.all {
+    display: flex;
+    margin: 20px;
+    gap: 32px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin {
+    color: white;
+    font-size: 60px;
+}
+
+.linkedin-bg {
+    background-color: blue;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    aspect-ratio: 1;
+}
+
+.youtube-bg {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    background-color: red;
+    padding: 0 15px;
+    border-radius: 50% / 11%;
+    align-items: center;
+    justify-content: center;
+}
+
+  .youtube-bg::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #ff0000;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -4.5%;
+    border-radius: 5% / 50%;
+  }
+
+  .youtube {
+    width: 0; 
+    height: 0; 
+    display: flex;
+    border-top: 8vmin solid transparent;
+    border-bottom: 8vmin solid transparent; 
+    border-left:14vmin solid white; 
+  }
